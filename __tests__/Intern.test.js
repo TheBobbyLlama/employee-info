@@ -12,10 +12,5 @@ test("tests Intern constructor and getters", () => {
 	expect(intern.getEmail()).toBe(testEmail);
 	expect(intern.getSchool()).toBe(testSchool);
 	expect(intern.getRole()).toBe("Intern");
-});
-
-test("tests Intern printout", () => {
-	const intern = new Intern("Timmy", "789", "newguy@mail.server", "Hard Knocks");
-
-	expect(intern.printCard()).toEqual(expect.any(String));
+	expect(intern.getCardInfo()).toEqual(expect.any(String));
 });

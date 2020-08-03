@@ -1,0 +1,54 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	align-items: center;
+	background-color: #202020;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+section {
+	background-color: #e0e0e0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section > div {
+	background-color: white;
+	margin: 10px;
+	padding: 0px;
+	width: 200px;
+}
+
+section div > div {
+	background-color: darkolivegreen;
+	color: white;
+	font-size: 24px;
+	margin: 0;
+	padding: 4px 10px;
+}
+
+section p {
+	margin: 0px;
+}
+
+section p:nth-child(2) {
+	font-size: 20px;
+	font-style: italic;
+	opacity: 0.75;
+}
+
+section li {
+	list-style: none;
+	margin: 0;
+}
+
+section ul {
+	margin: 10px 0 0 0;
+	padding: 8px;
+}

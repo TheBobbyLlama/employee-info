@@ -12,10 +12,5 @@ test("tests Engineer constructor and getters", () => {
 	expect(engineer.getEmail()).toBe(testEmail);
 	expect(engineer.getGithub()).toBe(testGithub);
 	expect(engineer.getRole()).toBe("Engineer");
-});
-
-test("tests Engineer printout", () => {
-	const engineer = new Engineer("Todd", "4321", "todd@mail.server", "TestHub");
-
-	expect(engineer.printCard()).toEqual(expect.any(String));
+	expect(engineer.getCardInfo()).toEqual(expect.any(String));
 });

@@ -12,4 +12,5 @@ test("tests Manager constructor and getters", () => {
 	expect(manager.getEmail()).toBe(testEmail);
 	expect(manager.getOfficeNumber()).toBe(testOffice);
 	expect(manager.getRole()).toBe("Manager");
+	expect(manager.getCardInfo()).toEqual(expect.any(String));
 });

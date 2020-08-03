@@ -20,8 +20,8 @@ test("tests Employee getters", () => {
 	expect(employee.getRole()).toBe("Employee");
 });
 
-test("tests Employee printout", () => {
-	const employee = new Employee("Steve", "123", "me@email.server");
+test("tests Emplyee printout", () => {
+	const employee = new Employee("Steve", "123", "me@mail.server");
 
-	expect(employee.printCard()).toBeNull();
-});
+	expect(employee.printCard()).toEqual(expect.any(String));
+})
