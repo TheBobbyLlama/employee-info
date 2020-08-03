@@ -126,7 +126,6 @@ const getEmployee = function(results) {
 }
 
 const createOutput = function(results) {
-	console.log(results);
 	const pageOutput = generatePage(results);
 
 	writeFile(pageOutput).then(({message}) => {
